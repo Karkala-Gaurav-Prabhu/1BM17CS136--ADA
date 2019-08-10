@@ -21,7 +21,15 @@ int main(int argc, char **argv)
 		cin>>a[i];
 	}
 	
+	for(i=0; i<n; i++)
+	{
+		if(a[i]>a[i+1])
+			max=a[i];
+		else
+			max=a[i+1];
+	}
 	
+	cout<<"Largest no. is "<<max;
 	
 	end = clock();
 	time_taken = ((double)(end-start))/CLOCKS_PER_SEC;
