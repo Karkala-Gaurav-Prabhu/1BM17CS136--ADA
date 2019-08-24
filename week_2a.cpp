@@ -17,7 +17,12 @@ int main(){
 	
 	if(k<=0)
 	{
-		cout<<"k cannot be less than or equal to zero";
+		cout<<"k should not be less than or equal to zero";
+	}
+	
+	if(k>n)
+	{
+		cout<<"k should not be greater than size of array";
 	}
 	
 	int min;
