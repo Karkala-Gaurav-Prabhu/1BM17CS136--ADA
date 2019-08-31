@@ -1,4 +1,6 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std; 
+
 int ksmall(int a[],int n)
 {
 	int i,j,temp,min,count=0;
@@ -22,16 +24,19 @@ int ksmall(int a[],int n)
 
 }
 
-void main()
+int main()
 {
-	int k,y,n,i;
+	int n,i;
 	int a[10];
-	printf("enter the no of elements  :");
-	scanf("%d",&n);
-	printf("enter the array elements :");
+	cout<<"enter the no of elements : ";
+	cin>>n;
+	cout<<"enter the array elements :\n";
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
-	printf(" no of comparisions=%d",ksmall(a,n));
+		cin>>a[i];
+	cout<<" no of comparision: "<<ksmall(a,n);
+	cout<<"\n";
+	
+	return 0;
 }
 
 
