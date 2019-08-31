@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int a[50];
 
@@ -8,20 +9,21 @@ int split(int,int);
 int main()
 {
  int n,i;
- printf("enter the no of elements: ");
- scanf("%d",&n);
+ cout<<"enter the no of elements: ";
+ cin>>n;
  
- printf("Enter %d elements:\n",n);
+ cout<<"Enter "<<n<<" elements:\n";
  for(i=0;i<n;i++)
-  scanf("%d",&a[i]);
+  cin>>a[i];
   
  qsort(0,n-1);
  
- printf("The resultant array: ");
+ cout<<"The resultant array: ";
  for(i=0;i<n;i++)
-   printf("%5d",a[i]);
+   cout<<a[i]<<" ";
  
- printf("\n"); 
+ cout<<"\n";
+ 
  return 0;
 }
 
