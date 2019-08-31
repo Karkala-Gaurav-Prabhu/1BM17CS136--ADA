@@ -1,16 +1,17 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
  
 int main()
 {
   int array[100], n, c, d, swap,count=0;
  
-  printf("Enter number of elements\n");
-  scanf("%d", &n);
+  cout<<"Enter number of elements: ";
+  cin>>n;
  
-  printf("Enter %d integers\n", n);
+  cout<<"Enter "<<n<<" elements:\n";
  
   for (c = 0; c < n; c++)
-    scanf("%d", &array[c]);
+    cin>>array[c];
  
   for (c = 0 ; c < n - 1; c++)
   {
@@ -26,12 +27,12 @@ int main()
     }
   }
  
-  printf("Sorted list in ascending order:\n");
+  cout<<"Sorted list in ascending order: ";
  
   for (c = 0; c < n; c++)
-     printf("%d\n", array[c]);
+     cout<<array[c]<<" ";
 
-	printf("no of comparisions are  :%d",count);
+	cout<<"\nNo. of comparisions are : "<< count<<"\n";
  
   return 0;
 }
