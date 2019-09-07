@@ -9,17 +9,17 @@ int check(int a[10][10],int n)
 		{
 			if(a[i][j]>1 || a[i][j]<0)
 			{
-				cout<<"The Matrix should only consist of 1's and 0's";
+				cout<<"The Matrix should only consist of 1's and 0's\n";
 				return 0;
 			}
 			else if(i == j && a[i][j] == 1)
 			{
-				cout<<"The value at diagonals should be 0";
+				cout<<"The value at diagonals should be 0\n";
 				return 0;
 			}
 		}
 	}
-	cout<<"Matrix is valid";
+	cout<<"Matrix is valid\n";
 	return 1;
 }
 
@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 			{
 				if(a[i][j] == 1)
 				{
-					cout<<"Node "<<i+1<<" and "<<j+1<<" are connected\n"; // considering node names start from 1 onwards
+					cout<<"Node "<<i<<" and "<<j<<" are connected\n"; // considering node names start from 0 onwards
 				}
 			}
 		}
