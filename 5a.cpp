@@ -3,11 +3,9 @@ using namespace std;
 #define UNASSIGNED 0
 #define N 9
 
-bool FindUnassignedLocation(int grid[N][N],
-                            int &row, int &col);
+bool FindUnassignedLocation(int grid[N][N], int &row, int &col);
 
-bool isSafe(int grid[N][N], int row,
-                   int col, int num);
+bool isSafe(int grid[N][N], int row, int col, int num);
 
 bool SolveSudoku(int grid[N][N])
 {
@@ -27,8 +25,7 @@ bool SolveSudoku(int grid[N][N])
     return false;
 }
 
-bool FindUnassignedLocation(int grid[N][N],
-                            int &row, int &col)
+bool FindUnassignedLocation(int grid[N][N], int &row, int &col)
 {
     for (row = 0; row < N; row++)
         for (col = 0; col < N; col++)
@@ -53,8 +50,7 @@ bool UsedInCol(int grid[N][N], int col, int num)
     return false;
 }
 
-bool UsedInBox(int grid[N][N], int boxStartRow,
-               int boxStartCol, int num)
+bool UsedInBox(int grid[N][N], int boxStartRow, int boxStartCol, int num)
 {
     for (int row = 0; row < 3; row++)
         for (int col = 0; col < 3; col++)
@@ -64,8 +60,7 @@ bool UsedInBox(int grid[N][N], int boxStartRow,
     return false;
 }
 
-bool isSafe(int grid[N][N], int row,
-                   int col, int num)
+bool isSafe(int grid[N][N], int row, int col, int num)
 {
     return !UsedInRow(grid, row, num) &&
            !UsedInCol(grid, col, num) &&
