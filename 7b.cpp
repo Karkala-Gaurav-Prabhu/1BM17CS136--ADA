@@ -48,3 +48,9 @@ int main()
     printf("\nThe max profit is: %d\n", knapSack(W, wt, val, n)); 
     return 0; 
 } 
+
+/*
+Output:
+The Items of weights 10 25 provide max profit
+The max profit is: 75
+*/
