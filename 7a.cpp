@@ -65,3 +65,9 @@ int main()
     printf("\nLength of LCS is %d\n", lcs(X, Y, m, n)); 
 	return 0;
 }
+
+/*
+Output:
+LCS of ABCBDAB and BDCABA is BDAB
+Length of LCS is 4
+*/
