@@ -71,3 +71,9 @@ int main()
     cout << "Maximum value we can obtain = "<< fractionalKnapsack(W, arr, n)<<endl;
     return 0; 
 }
+
+/*
+Output:
+Enter Max Capacity of the bag: 60
+Maximum value we can obtain = 280
+*/
